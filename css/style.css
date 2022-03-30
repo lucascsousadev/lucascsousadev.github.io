@@ -5,7 +5,7 @@ body, ul {
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
 }
-
+ 
 a {
     color: white;
     text-decoration: none;
@@ -218,26 +218,21 @@ header .container {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 460px) {
     #header {
-        padding: 0 1.3rem;
-    }
-
-    .btn1 {
-        
+        padding: 0 1.5rem;
     }
 
     .bghero {
         background: #1b1b1b;
-        height: 750px;
+        height: 627px;
     }
 
     .hero{
         display: inline-block;
-        width: 85%;
-        max-width: 500px;
+        width: 100vw;
+        
         margin: auto;
-        padding-top: 10%;
 
     }
 
@@ -249,14 +244,13 @@ header .container {
     }
 
     .bgfoto1 {
-        background: -webkit-linear-gradient(180deg, #e8bb30 55%, #1b1b1b 55%);
-        width: 110%;
+        background: -webkit-linear-gradient(180deg, #e8bb30 50%, #1b1b1b 50%);
+        width: 100vw;
         height: 340px;
     }
 
     #foto1 {
-        width: 65%;
-        max-width: 400px;
+        width: 60%;
     }
 
     #menu {
@@ -327,13 +321,6 @@ header .container {
         top: -7px;
         color: #e8bb30;
     }
-
-    .hero {
-        background-color: #1b1b1b;
-        padding: 2.8125rem 2rem 0 2rem;
-        height: 698px;
-    }
-
 
     .hero h1 {
         margin: 0;
