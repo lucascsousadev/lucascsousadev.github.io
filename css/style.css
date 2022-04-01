@@ -142,6 +142,7 @@ header .container {
     font-weight: 500;
     color: #e8bb30;
     border: 2px solid #e8bb30;
+    box-shadow: #0e0e0ee2 0.1rem 0.1rem 0.1rem;
     padding: 8px 15px;
     justify-content: center;
     margin: 0 20%;
@@ -186,6 +187,7 @@ header .container {
     font-weight: 500;
     color: #e8bb30;
     border: 2px solid #e8bb30;
+    box-shadow: #191919 0.1rem 0.1rem 0.1rem;
     padding: 8px 15px;
     justify-content: center;
     margin: 10% 20%;
@@ -201,6 +203,7 @@ header .container {
     display: flex;
     font-size: 1rem;
     background-color: #e8bb30;
+    box-shadow: #191919 0.1rem 0.1rem 0.1rem;
     font-weight: 600;
     color: #1b1b1b;;
     padding: 8px 15px;
@@ -217,7 +220,7 @@ header .container {
 .bgportifolio {
     background-color: #1b1b1b;
     padding: 15% 8% 10% 8%;
-    height: 600px;
+    height: 698px;
 }
 
 .bgportifolio h1 {
@@ -232,10 +235,104 @@ header .container {
     text-align: center;
 }
 
+.slider {
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 315px;
+    height: 535px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 315px;
+    height: 535px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 315px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #e8bb30;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+.navigation-auto div {
+    border: 2px solid #e8bb30;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 315px;
+    margin-top: 535px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #e8bb30;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #e8bb30;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #e8bb30;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #e8bb30;
+}
+
 .bgskills {
     background-color: #292929;
     padding: 15% 8% 10% 8%;
-    height: 400px;
+    height: 330px;
 }
 
 .bgskills h1 {
@@ -243,6 +340,10 @@ header .container {
     margin: 0 0 5% 0;
     justify-content: center;
     color: #e8bb30;
+}
+
+#iconskills {
+    padding-top: 8%;
 }
 
 .contato {
@@ -260,7 +361,7 @@ header .container {
 
 .ctafinal {
     background-color: #e8bb30;
-    padding: 10% 6% 10% 6%;
+    padding: 8% 6% 10% 6%;
     height: 150px;
 }
 
@@ -277,6 +378,7 @@ header .container {
     display: flex;
     font-size: 1rem;
     background-color: #f8f9fa;
+    box-shadow: #856a1b 0.1rem 0.1rem 0.1rem;
     font-weight: 600;
     color: #1b1b1b;;
     padding: 8px 15px;
@@ -297,5 +399,3 @@ header .container {
     justify-content: center;
     font-size: .8rem;
 }
-
-
