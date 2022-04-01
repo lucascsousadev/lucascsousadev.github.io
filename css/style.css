@@ -362,9 +362,9 @@ header .container {
 .links-contato {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 53.5%;
     max-width: 84%;
     margin: auto;
-    align-items: center;
 }
 
 .links-contato > a:hover {
